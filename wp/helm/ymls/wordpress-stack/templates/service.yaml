@@ -1,0 +1,13 @@
+---
+# Source: wordpress-stack/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: wp-service
+  namespace: wp
+spec:
+  selector:
+    id: "c0905672"
+  ports:
+    - port: 80
+      targetPort: 80

@@ -1,0 +1,14 @@
+---
+# Source: wordpress-stack/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-proxy-service
+  namespace: proxy
+spec:
+  selector:
+    id: "c0905672"
+  ports:
+    - port: 80
+      targetPort: 80
+  type: LoadBalancer

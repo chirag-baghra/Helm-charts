@@ -1,0 +1,9 @@
+---
+# Source: wordpress-db/templates/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: db-config
+  namespace: db
+data:
+  MYSQL_DATABASE: wordpress

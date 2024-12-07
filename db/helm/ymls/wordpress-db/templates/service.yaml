@@ -1,0 +1,13 @@
+---
+# Source: wordpress-db/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: db-service
+  namespace: db
+spec:
+  selector:
+    id: "c0905672"
+  ports:
+    - port: 3306
+      targetPort: 3306
